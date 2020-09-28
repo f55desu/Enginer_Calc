@@ -42,7 +42,7 @@ namespace Library
             }
             catch(Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?.." , "Error" , MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         private void Difference(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace Library
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -81,7 +81,7 @@ namespace Library
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -101,15 +101,14 @@ namespace Library
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void GoToLog(object sender, RoutedEventArgs e)
         {
             Window logs_window = new Logarithms();
-            Window main_window = new MainWindow();
-            main_window.Close();
+            this.Hide();
             logs_window.Show();
         }
 
@@ -127,8 +126,196 @@ namespace Library
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void Power(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            String inputDataB = tbB.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                double dataB = Double.Parse(inputDataB);
+                Others s = new Others(dataA, dataB);
+                double result = s.Power();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Sin(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.Sin();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Cos(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.Cos();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Tan(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.Tan();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Ctg(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.Ctg();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void ArcSin(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.ArcSin();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void ArcCos(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.ArcCos();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void ArcTan(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                Trigonometry s = new Trigonometry(dataA);
+                double result = s.ArcTan();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Power_of_10(object sender, RoutedEventArgs e)
+        {
+            String inputDataA = tbA.Text;
+            String inputDataB = tbB.Text;
+            try
+            {
+                double dataA = Double.Parse(inputDataA);
+                double dataB = Double.Parse(inputDataB);
+                Others s = new Others(dataA, dataB);
+                double result = s.Power_of_10();
+
+                resultat.Text = result.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void LanEng(object sender, RoutedEventArgs e)
+        {
+            //Enginer_Calc.Properties.Settings.Default.languageCode = "en-US";
+            //Enginer_Calc.Properties.Settings.Default.Save();
+
+            ResultLabel.Content = "Result";
+            GoToLogButton.Content = "Logs";
+
+            ExitButton.Content = "Exit";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            //this.Show();
+        }
+        private void LanRus(object sender, RoutedEventArgs e)
+        {
+            //Enginer_Calc.Properties.Settings.Default.languageCode = "ru-RU";
+            //Enginer_Calc.Properties.Settings.Default.Save();
+            ResultLabel.Content = "Результат";
+            GoToLogButton.Content = "Логарифм";
+
+            ExitButton.Content = "Выход";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            //this.Show();
+        }
+        private void LanJap(object sender, RoutedEventArgs e)
+        {
+            //Enginer_Calc.Properties.Settings.Default.languageCode = "ja-JP";
+            //Enginer_Calc.Properties.Settings.Default.Save();
+            ResultLabel.Content = "結果";
+            GoToLogButton.Content = "対数";
+            
+            ExitButton.Content = "終了";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            //this.Show();
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Classes;
+using Library;
 
 namespace Enginer_Calc
 {
@@ -22,7 +23,6 @@ namespace Enginer_Calc
         {
             InitializeComponent();
         }
-
         private void Log_a(object sender, RoutedEventArgs e)
         {
             String inputDataA = tbA.Text;
@@ -39,14 +39,13 @@ namespace Enginer_Calc
             }
             catch(Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void Log_10(object sender, RoutedEventArgs e)
         {
             String inputDataA = tbA.Text;
-
             try
             {
                 double dataA = Double.Parse(inputDataA);
@@ -57,7 +56,7 @@ namespace Enginer_Calc
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -75,9 +74,15 @@ namespace Enginer_Calc
             }
             catch (Exception)
             {
-                MessageBox.Show("Ты числа-то введи,ばか！");
+                MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
+        }
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            Window main_window = new MainWindow();
+            this.Hide();
+            main_window.Show();
         }
     }
 }

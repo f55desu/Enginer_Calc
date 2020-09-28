@@ -7,7 +7,66 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="calc.png" />
+    <None Remove="Pictures\english.png" />
+    <None Remove="Pictures\japaneese.png" />
+    <None Remove="Pictures\russian.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Classes\Classes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calc.png" />
+    <Resource Include="Pictures\english.png" />
+    <Resource Include="Pictures\japaneese.png" />
+    <Resource Include="Pictures\russian.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Langs\English.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>English.en.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Langs\Japaneese.ja.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Japaneese.ja.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Langs\Russian.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Russian.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Langs\English.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Langs\Japaneese.ja.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Japaneese.ja.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Langs\Russian.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Russian.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

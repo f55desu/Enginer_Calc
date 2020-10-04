@@ -290,32 +290,34 @@ namespace Library
 
             ResultLabel.Content = "Result";
             GoToLogButton.Content = "Logs";
+            ResultLabel.Margin = new Thickness(519, 32, 0, 0);
+            ResultLabel.Width = 70;
 
             ExitButton.Content = "Exit";
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
-            //this.Show();
         }
         private void LanRus(object sender, RoutedEventArgs e)
         {
             //Enginer_Calc.Properties.Settings.Default.languageCode = "ru-RU";
             //Enginer_Calc.Properties.Settings.Default.Save();
             ResultLabel.Content = "Результат";
+            ResultLabel.Margin = new Thickness(508, 32, 0, 0);
+            ResultLabel.Width = 110;
             GoToLogButton.Content = "Логарифм";
 
             ExitButton.Content = "Выход";
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
-            //this.Show();
         }
         private void LanJap(object sender, RoutedEventArgs e)
         {
             //Enginer_Calc.Properties.Settings.Default.languageCode = "ja-JP";
             //Enginer_Calc.Properties.Settings.Default.Save();
             ResultLabel.Content = "結果";
+            ResultLabel.Margin = new Thickness(519, 32, 0, 0);
+            ResultLabel.Width = 70;
             GoToLogButton.Content = "対数";
-            
             ExitButton.Content = "終了";
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
-            //this.Show();
         }
     }
 }

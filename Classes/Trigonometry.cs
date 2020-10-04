@@ -13,22 +13,22 @@ namespace Classes
         }
         public double Sin()
         {
-            double result = Math.Sin(a);
+            double result = Math.Sin((a * (Math.PI)) / 180);
             return result;
         }
         public double Cos()
         {
-            double result = Math.Cos(a);
+            double result = Math.Cos((a * (Math.PI)) / 180);
             return result;
         }
         public double Tan()
         {
-            double result = Math.Sin(a) / Math.Cos(a);
+            double result = Math.Sin((a * (Math.PI)) / 180) / Math.Cos((a * (Math.PI)) / 180);
             return result;
         }
         public double Ctg()
         {
-            double result = Math.Cos(a) / Math.Sin(a);
+            double result = Math.Cos((a * (Math.PI)) / 180) / Math.Sin((a * (Math.PI)) / 180);
             return result;
         }
         public double ArcSin()

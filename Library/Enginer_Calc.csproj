@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="272ec208-9f1e-40c5-bc5c-dd1eaf366ead.jpeg" />
     <None Remove="calc.png" />
     <None Remove="Pictures\english.png" />
     <None Remove="Pictures\japaneese.png" />
     <None Remove="Pictures\russian.png" />
+    <None Remove="thumb-1920-718707.jpg" />
+    <None Remove="wallpaperbetter.com_2560x1440 %281%29.jpg" />
+    <None Remove="wallpapersden.com_kochou-shinobu_2560x1440.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Pictures\big_wave.jpg" />
     <Resource Include="calc.png" />
     <Resource Include="Pictures\english.png" />
     <Resource Include="Pictures\japaneese.png" />

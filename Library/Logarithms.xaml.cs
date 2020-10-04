@@ -76,13 +76,60 @@ namespace Enginer_Calc
             {
                 MessageBox.Show("Numbers, Mayson, what are they meaning?..", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
         private void Back(object sender, RoutedEventArgs e)
         {
             Window main_window = new MainWindow();
             this.Hide();
             main_window.Show();
+        }
+
+        private void LanEng(object sender, RoutedEventArgs e)
+        {
+            ResultLabel.Content = "Result";
+            ResultLabel.Width = 72;
+            ResultLabel.Margin = new Thickness(524, 58, 0, 0);
+            BodyLabel.Content = "Body";
+            BaseLabel.Width = 52;
+            BaseLabel.Margin = new Thickness(339, 55, 0, 0);
+            BaseLabel.Content = "Base";
+            LogCustomLabel.Content = "Logarithm custom base";
+            LogELabel.Content = "Logarithm base Exp";
+            Log10Label.Content = "Logarithm base 10";
+            BackButton.Content = "Back";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void LanRus(object sender, RoutedEventArgs e)
+        {
+            ResultLabel.Content = "Результат";
+            ResultLabel.Width = 110;
+            ResultLabel.Margin = new Thickness(516, 57, 0, 0);
+            BodyLabel.Content = "Тело";
+            BaseLabel.Width = 119;
+            BaseLabel.Margin = new Thickness(306, 56, 0, 0);
+            BaseLabel.Content = "Основание";
+            LogCustomLabel.Content = "Логарифм с основанием";
+            LogELabel.Content = "Логарифм с основанием Exp";
+            Log10Label.Content = "Логарифм с основанием 10";
+            BackButton.Content = "Назад";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void LanJap(object sender, RoutedEventArgs e)
+        {
+            ResultLabel.Content = "結果";
+            ResultLabel.Width = 52;
+            ResultLabel.Margin = new Thickness(534, 58, 0, 0);
+            BodyLabel.Content = "ボディ";
+            BaseLabel.Width = 52;
+            BaseLabel.Margin = new Thickness(339, 55, 0, 0);
+            BaseLabel.Content = "底";
+            LogCustomLabel.Content = "対数のカスタム底";
+            LogELabel.Content = "対数の底Exp";
+            Log10Label.Content = "対数の底１０";
+            BackButton.Content = "戻る";
+            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

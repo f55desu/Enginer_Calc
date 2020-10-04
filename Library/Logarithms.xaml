@@ -6,16 +6,27 @@
         xmlns:local="clr-namespace:Enginer_Calc"
         mc:Ignorable="d" Title="Logarithms" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize">
     <Grid>
-        <Label x:Name="BodyLabel" Content="Тело" HorizontalAlignment="Left" Margin="162,56,0,0" VerticalAlignment="Top" Width="60" Height="38" FontSize="20"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pictures/big_wave.jpg"/>
+        </Grid.Background>
+        <Label x:Name="BodyLabel" Content="Body" HorizontalAlignment="Left" Margin="162,56,0,0" VerticalAlignment="Top" Width="60" Height="38" FontSize="20" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Margin="132,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" FontSize="20" x:Name="tbA"/>
         <TextBox HorizontalAlignment="Left" Margin="305,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" FontSize="20" x:Name="tbB"/>
-        <Label x:Name="BaseLabel" Content="Основание" HorizontalAlignment="Left" Margin="306,56,0,0" VerticalAlignment="Top" Width="119" Height="38" FontSize="20"/>
+        <Label x:Name="BaseLabel" Content="Base" HorizontalAlignment="Left" Margin="339,55,0,0" VerticalAlignment="Top" Width="52" Height="38" FontSize="20" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Margin="500,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" FontSize="20" IsReadOnly="True" x:Name="resultat"/>
-        <Label x:Name="ResultLabel" Content="Результат" HorizontalAlignment="Left" Margin="516,57,0,0" VerticalAlignment="Top" Width="104" Height="36" FontSize="20"/>
-        <Button x:Name="LogCustomLabel" Content="Логарифм с основанием" HorizontalAlignment="Left" Margin="216,185,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_a" FontSize="20"/>
-        <Button x:Name="Log10Label" Content="Логарифм с основанием 10" HorizontalAlignment="Left" Margin="216,267,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_10" FontSize="20"/>
-        <Button x:Name="LogELabel" Content="Логарифм с основанием Exp" HorizontalAlignment="Left" Margin="216,350,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_e" FontSize="20"/>
-        <Button x:Name="BackButton" Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="627,466,0,0" VerticalAlignment="Top" Height="41" Width="101" FontSize="20"/>
-
+        <Label x:Name="ResultLabel" Content="Result" HorizontalAlignment="Left" Margin="524,58,0,0" VerticalAlignment="Top" Width="72" Height="36" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="LogCustomLabel" Content="Logarithm custom base" HorizontalAlignment="Left" Margin="216,185,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_a" FontSize="20"/>
+        <Button x:Name="Log10Label" Content="Logarithm base 10" HorizontalAlignment="Left" Margin="216,267,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_10" FontSize="20"/>
+        <Button x:Name="LogELabel" Content="Logarithm base Exp" HorizontalAlignment="Left" Margin="216,350,0,0" VerticalAlignment="Top" Height="45" Width="298" Click="Log_e" FontSize="20"/>
+        <Button x:Name="BackButton" Content="Back" Click="Back" HorizontalAlignment="Left" Margin="627,466,0,0" VerticalAlignment="Top" Height="41" Width="101" FontSize="20"/>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="55,454,0,0" VerticalAlignment="Top" Height="36" Width="59" Click="LanEng">
+            <Image Source="/Pictures/english.png"/>
+        </Button>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="146,454,0,0" VerticalAlignment="Top" Height="36" Width="60" Click="LanRus">
+            <Image Source="/Pictures/russian.png"/>
+        </Button>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="240,454,0,0" VerticalAlignment="Top" Height="36" Width="59" Click="LanJap">
+            <Image Source="/Pictures/japaneese.png"/>
+        </Button>
     </Grid>
 </Window>

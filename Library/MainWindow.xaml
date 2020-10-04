@@ -8,6 +8,9 @@
         xmlns:language="clr-namespace:Enginer_Calc.Properties.Langs"
         Title="Engineer Calculator" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pictures/big_wave.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="373*"/>
@@ -16,14 +19,14 @@
         <TextBox x:Name="tbA" HorizontalAlignment="Right" Margin="0,74,497,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" FontSize="20" />
         <TextBox x:Name="tbB" HorizontalAlignment="Left" Margin="302,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" FontSize="20"/>
         <TextBox x:Name="resultat" HorizontalAlignment="Right" Margin="0,74,118,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" IsReadOnly="True" FontSize="22"/>
-        <Button Content="-"  Click="Difference" Grid.Column="1" HorizontalAlignment="Left" Margin="231,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
+        <Button Content="ー"  Click="Difference" Grid.Column="1" HorizontalAlignment="Left" Margin="231,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="/"  Click="Divide" Grid.Column="1" HorizontalAlignment="Left" Margin="544,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="x"  Click="Multiply" Grid.Column="1" HorizontalAlignment="Left" Margin="389,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="+" Click="Summ" Grid.Column="1" HorizontalAlignment="Left" Margin="84,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
-        <Label Content="Y" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Margin="352,32,0,0" FontSize="20"/>
-        <Label Content="X" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Margin="163,34,0,0" FontSize="20"/>
-        <Label x:Name="ResultLabel" Content="Результат" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="37" Margin="508,32,0,0" FontSize="20"/>
-        <Button x:Name="GoToLogButton" Content="Логарифм" Click="GoToLog" Grid.Column="1" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
+        <Label Content="Y" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Margin="352,32,0,0" FontSize="20" FontWeight="Bold"/>
+        <Label Content="X" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Margin="163,34,0,0" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="ResultLabel" Content="Result" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="37" Margin="519,32,0,0" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="GoToLogButton" Content="Logarithm" Click="GoToLog" Grid.Column="1" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="√" Click="Sukurt" Grid.Column="1" HorizontalAlignment="Left" Margin="231,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="X^Y" Click="Power" Grid.Column="1" HorizontalAlignment="Left" Margin="389,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="cos(X)"  Click="Cos" Grid.Column="1" HorizontalAlignment="Left" Margin="231,267,0,0" VerticalAlignment="Top" Height="52" Width="60" FontSize="20"/>
@@ -33,7 +36,7 @@
         <Button Content="Arc"  Click="ArcTan" Grid.Column="1" HorizontalAlignment="Left" Margin="449,267,0,0" VerticalAlignment="Top" Height="52" Width="50" FontSize="20"/>
         <Button Content="Arc"  Click="ArcCos" Grid.Column="1" HorizontalAlignment="Left" Margin="291,267,0,0" VerticalAlignment="Top" Height="52" Width="50" FontSize="20"/>
         <Button Content="Arc" Click="ArcSin" Grid.Column="1" HorizontalAlignment="Left" Margin="144,267,0,0" VerticalAlignment="Top" Height="52" Width="50" FontSize="20"/>
-        <Button x:Name="ExitButton" Content="Выход" Click="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="621,462,0,0" VerticalAlignment="Top" Height="41" Width="101" FontSize="20"/>
+        <Button x:Name="ExitButton" Content="Exit" Click="Exit" Grid.Column="1" HorizontalAlignment="Left" Margin="621,462,0,0" VerticalAlignment="Top" Height="41" Width="101" FontSize="20"/>
         <Button Content="X*10^Y" Click="Power_of_10" Grid.Column="1" HorizontalAlignment="Left" Margin="544,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20" />
         <Button Grid.Column="1" HorizontalAlignment="Left" Margin="55,454,0,0" VerticalAlignment="Top" Height="36" Width="59" Click="LanEng">
             <Image Source="/Pictures/english.png"/>

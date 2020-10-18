@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Library"
         mc:Ignorable="d"
         xmlns:language="clr-namespace:Enginer_Calc.Properties.Langs"
-        Title="Engineer Calculator" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize">
+        Title="Engineer Calculator" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize" 
+        WindowStartupLocation="CenterScreen">
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Pictures/big_wave.jpg"/>
@@ -16,7 +18,7 @@
             <ColumnDefinition Width="373*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tbA" HorizontalAlignment="Right" Margin="0,74,497,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" FontSize="20" />
+        <TextBox x:Name="tbA" HorizontalAlignment="Right" Margin="0,74,497,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" FontSize="20"/>
         <TextBox x:Name="tbB" HorizontalAlignment="Left" Margin="302,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" FontSize="20"/>
         <TextBox x:Name="resultat" HorizontalAlignment="Right" Margin="0,74,118,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="34" Grid.Column="1" IsReadOnly="True" FontSize="22"/>
         <Button Content="ー"  Click="Difference" Grid.Column="1" HorizontalAlignment="Left" Margin="231,164,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>

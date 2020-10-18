@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Enginer_Calc"
-        mc:Ignorable="d" Title="Logarithms" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize">
+        mc:Ignorable="d" Title="Logarithms" Height="550" Width="750" Icon="/calc.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Pictures/big_wave.jpg"/>

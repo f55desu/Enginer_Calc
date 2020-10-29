@@ -30,16 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\Langs\English.en.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>English.en.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Properties\Langs\Japaneese.ja.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Japaneese.ja.resx</DependentUpon>
-    </Compile>
     <Compile Update="Properties\Langs\Russian.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -55,11 +45,9 @@
   <ItemGroup>
     <EmbeddedResource Update="Properties\Langs\English.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>English.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Langs\Japaneese.ja.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Japaneese.ja.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Langs\Russian.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

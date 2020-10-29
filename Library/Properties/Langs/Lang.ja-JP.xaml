@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:Enginer_Calc.Properties.Langs">
+    <v:String x:Key="buttonBack">戻る</v:String>
+    <v:String x:Key="buttonExit">終了</v:String>
+    <v:String x:Key="buttonLogs">対数</v:String>
+    <v:String x:Key="buttonLogs10">対数の底１０</v:String>
+    <v:String x:Key="buttonLogsA">対数のカスタム底</v:String>
+    <v:String x:Key="buttonLogsE">対数の底Exp</v:String>
+    <v:String x:Key="labelLogBase">底</v:String>
+    <v:String x:Key="labelLogBody">ボディ</v:String>
+    <v:String x:Key="labelRes">結果</v:String>
+    <v:String x:Key="mainTitle">関数電卓</v:String>
+    <v:String x:Key="logarithmTitle">対数</v:String>
+    <v:String x:Key="buttonReset">リセット</v:String>
+</ResourceDictionary>

@@ -19,9 +19,11 @@ namespace Enginer_Calc
     /// </summary>
     public partial class Logarithms : Window
     {
+        string language;
         public Logarithms()
         {
             InitializeComponent();
+            language = "ru-RU";
         }
         private void Log_a(object sender, RoutedEventArgs e)
         {
@@ -130,6 +132,16 @@ namespace Enginer_Calc
             Log10Label.Content = "対数の底１０";
             BackButton.Content = "戻る";
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Button_ResetY_Click(object sender, RoutedEventArgs e)
+        {
+            tbB.Text = "";
+        }
+
+        private void Button_ResetX_Click(object sender, RoutedEventArgs e)
+        {
+            tbA.Text = "";
         }
     }
 }

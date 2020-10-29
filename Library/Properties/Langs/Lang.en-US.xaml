@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:Enginer_Calc.Properties.Langs">
+    <v:String x:Key="buttonBack">Back</v:String>
+    <v:String x:Key="buttonExit">Exit</v:String>
+    <v:String x:Key="buttonLogs">Logs</v:String>
+    <v:String x:Key="buttonLogs10">Logarithm base 10</v:String>
+    <v:String x:Key="buttonLogsA">Logarithm custom base</v:String>
+    <v:String x:Key="buttonLogsE">Logarithm base Exp</v:String>
+    <v:String x:Key="labelLogBase">Base</v:String>
+    <v:String x:Key="labelLogBody">Body</v:String>
+    <v:String x:Key="labelRes">Result</v:String>
+    <v:String x:Key="mainTitle">Engineer Calculator</v:String>
+    <v:String x:Key="logarithmTitle">Logaritms</v:String>
+    <v:String x:Key="buttonReset">Reset</v:String>
+</ResourceDictionary>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,11 @@ namespace Library
     /// </summary>
     public partial class MainWindow : Window
     {
+        string language;
         public MainWindow()
         {
             InitializeComponent();
+            language = "en-US";
         }
         private void Summ(object sender, RoutedEventArgs e)
         {
@@ -285,39 +288,43 @@ namespace Library
 
         private void LanEng(object sender, RoutedEventArgs e)
         {
-            //Enginer_Calc.Properties.Settings.Default.languageCode = "en-US";
-            //Enginer_Calc.Properties.Settings.Default.Save();
-
-            ResultLabel.Content = "Result";
-            GoToLogButton.Content = "Logs";
-            ResultLabel.Margin = new Thickness(519, 32, 0, 0);
-            ResultLabel.Width = 70;
-
-            ExitButton.Content = "Exit";
+            //ResultLabel.Margin = new Thickness(519, 32, 0, 0);
+            //ResultLabel.Width = 70;
+            
+            language = "en-US";
+            CultureInfo lang = new CultureInfo(language);
+            App.Language = lang;
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         private void LanRus(object sender, RoutedEventArgs e)
         {
-            //Enginer_Calc.Properties.Settings.Default.languageCode = "ru-RU";
-            //Enginer_Calc.Properties.Settings.Default.Save();
-            ResultLabel.Content = "Результат";
-            ResultLabel.Margin = new Thickness(508, 32, 0, 0);
-            ResultLabel.Width = 110;
-            GoToLogButton.Content = "Логарифм";
-
-            ExitButton.Content = "Выход";
+            //ResultLabel.Margin = new Thickness(508, 32, 0, 0);
+            //ResultLabel.Width = 110;
+            
+            language = "ru-RU";
+            CultureInfo lang = new CultureInfo(language);
+            App.Language = lang;
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         private void LanJap(object sender, RoutedEventArgs e)
         {
-            //Enginer_Calc.Properties.Settings.Default.languageCode = "ja-JP";
-            //Enginer_Calc.Properties.Settings.Default.Save();
-            ResultLabel.Content = "結果";
-            ResultLabel.Margin = new Thickness(519, 32, 0, 0);
-            ResultLabel.Width = 70;
-            GoToLogButton.Content = "対数";
-            ExitButton.Content = "終了";
+            //ResultLabel.Margin = new Thickness(519, 32, 0, 0);
+            //ResultLabel.Width = 70;
+            
+            language = "ja-JP";
+            CultureInfo lang = new CultureInfo(language);
+            App.Language = lang;
             MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Button_ResetX_Click(object sender, RoutedEventArgs e)
+        {
+            tbA.Text = "";
+        }
+
+        private void Button_ResetY_Click(object sender, RoutedEventArgs e)
+        {
+            tbB.Text = "";
         }
     }
 }

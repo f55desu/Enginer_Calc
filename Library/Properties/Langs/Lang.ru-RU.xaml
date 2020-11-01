@@ -4,7 +4,7 @@
                     xmlns:local="clr-namespace:Enginer_Calc.Properties.Langs">
     <v:String x:Key="buttonBack">Назад</v:String>
     <v:String x:Key="buttonExit">Выход</v:String>
-    <v:String x:Key="buttonLogs">Логарифм</v:String>
+    <v:String x:Key="buttonLogs">Логарифмы</v:String>
     <v:String x:Key="buttonLogs10">Логарифм с основанием 10</v:String>
     <v:String x:Key="buttonLogsA">Логарифм с основанием</v:String>
     <v:String x:Key="buttonLogsE">Логарифм с основанием Exp</v:String>

@@ -28,7 +28,7 @@
         <Label Content="Y" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Margin="352,32,0,0" FontSize="20" FontWeight="Bold"/>
         <Label Content="X" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Margin="163,32,0,0" FontSize="20" FontWeight="Bold" RenderTransformOrigin="1.385,0.493"/>
         <Label x:Name="ResultLabel" Content="{DynamicResource labelRes}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="37" Margin="499,32,0,0" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center"/>
-        <Button x:Name="GoToLogButton" Content="{DynamicResource buttonLogs}" Click="GoToLog" Grid.Column="1" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
+        <Button x:Name="GoToLogButton" Content="{DynamicResource buttonLogs}" Click="GoToLog" Grid.Column="1" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="19"/>
         <Button Content="√" Click="Sukurt" Grid.Column="1" HorizontalAlignment="Left" Margin="231,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="X^Y" Click="Power" Grid.Column="1" HorizontalAlignment="Left" Margin="389,366,0,0" VerticalAlignment="Top" Height="52" Width="110" FontSize="20"/>
         <Button Content="cos(X)"  Click="Cos" Grid.Column="1" HorizontalAlignment="Left" Margin="231,267,0,0" VerticalAlignment="Top" Height="52" Width="60" FontSize="20"/>

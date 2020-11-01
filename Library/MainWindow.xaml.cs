@@ -294,7 +294,7 @@ namespace Library
             language = "en-US";
             CultureInfo lang = new CultureInfo(language);
             App.Language = lang;
-            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Language has been changed!", "Language changing", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         private void LanRus(object sender, RoutedEventArgs e)
         {
@@ -304,7 +304,7 @@ namespace Library
             language = "ru-RU";
             CultureInfo lang = new CultureInfo(language);
             App.Language = lang;
-            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Язык изменён!", "Изменение языка", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         private void LanJap(object sender, RoutedEventArgs e)
         {
@@ -314,7 +314,7 @@ namespace Library
             language = "ja-JP";
             CultureInfo lang = new CultureInfo(language);
             App.Language = lang;
-            MessageBox.Show("Language has been changed!", "Changing language", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("言語が変更されました!", "言語の変化", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void Button_ResetX_Click(object sender, RoutedEventArgs e)
